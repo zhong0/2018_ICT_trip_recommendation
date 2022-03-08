@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundmod"
+    tools:context=".modify">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rock_salt"
+        android:text="@string/wordModification"
+        android:textAlignment="center"
+        android:textColor="#465D4C"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="#80FFFFFF"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/wordAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/wordAge"
+            android:textColor="#554236"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/modAgeSpinner"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="30dp"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/woreCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/wordCarrier"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textColor="#554236"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/modCarSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btModSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#80554236"
+        android:text="@string/wordSave"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        style="?android:textAppearanceSmall" />
+</LinearLayout>

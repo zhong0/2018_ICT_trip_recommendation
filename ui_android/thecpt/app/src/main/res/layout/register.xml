@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundmod"
+    tools:context=".register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/rock_salt"
+        android:text="@string/registerEn"
+        android:textAlignment="center"
+        android:textColor="#465D4C"
+        android:textSize="56sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/regWaring"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/regWarning"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="#80FFFFFF"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordAcc"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/regAcc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:ems="10"
+                    android:maxLength="8"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                    android:hint="@string/setAcc"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btChkAcc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    style="?android:textAppearanceSmall"
+                    android:textStyle="bold"
+                    android:text="@string/wordheckAcc" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordPass"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/regPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:ems="10"
+                android:hint="@string/hintPassword"
+                android:inputType="textPassword"
+                android:maxLength="11" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordPasswordAgain"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/regPasswordAg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+                android:ems="10"
+                android:hint="@string/hintPass"
+                android:inputType="textPassword"
+                android:maxLength="11" />
+
+            <TextView
+                android:id="@+id/wordGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordGender"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ToggleButton
+                    android:id="@+id/regTBMan"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/mantoggle"
+                    android:checked="true"
+                    android:textOff=""
+                    android:textOn="" />
+
+                <ToggleButton
+                    android:id="@+id/regTBWoman"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/womantoggle"
+                    android:textOff=""
+                    android:textOn="" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wordAge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordAge"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/regAgeSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/woreCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordCarrier"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/regCarSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:spinnerMode="dialog" />
+
+            <TextView
+                android:id="@+id/tvForgetQ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetQWord"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/forgetQue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintForgetQ"
+                android:inputType="textPersonName"
+                android:maxLength="8" />
+
+            <TextView
+                android:id="@+id/tvForgetA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/forgetAWord"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/forgetAns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="@string/hintForgetA"
+                android:inputType="textPersonName"
+                android:maxLength="8" />
+
+            <Button
+                android:id="@+id/btReg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="#80554236"
+                style="?android:textAppearanceSmall"
+                android:textStyle="bold"
+                android:text="@string/wordReg" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

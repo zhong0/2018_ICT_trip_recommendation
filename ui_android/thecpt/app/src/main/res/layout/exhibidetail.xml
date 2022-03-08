@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroudresult"
+    tools:context=".exhibidetail">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical" >
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/tvExbName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="#554236"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="展期"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/exDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:background="#80FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvexIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="簡介"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/exIntro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:background="#80FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

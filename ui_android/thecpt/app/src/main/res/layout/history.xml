@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundhis"
+    tools:context=".history">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ActName"
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ActivityName"
+                android:textAlignment="center"
+                android:textColor="#554236"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/wordInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="簡介"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/ActInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#80FFFFFF"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:padding="5dp"
+                android:text="TextView"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/wordAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="地址"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80FFFFFF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ActAdd"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/btMap"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/map" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/wordTel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="電話"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#80FFFFFF"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ActTel"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="5dp"
+                    android:text="TextView"
+                    android:textSize="16sp" />
+
+                <ImageButton
+                    android:id="@+id/phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#00FFFFFF"
+                    app:srcCompat="@drawable/phone" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/wordRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/wordRating"
+                android:textColor="#554236"
+                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/ActContent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="**儲存後不得更改評分，且清除此活動紀錄**"
+                android:textColor="#FF0000"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/ratingAct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="#80FFFFFF"
+                    android:numStars="5" />
+
+                <Button
+                    android:id="@+id/btRateSave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/wordSave"
+                    style="?android:textAppearanceSmall"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

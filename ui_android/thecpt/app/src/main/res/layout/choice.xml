@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundchoice"
+    tools:context=".choice">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/tgbtSport"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/sporttoggle"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/tgbtPlay"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/playtoggle"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/tgbtExhib"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/quiettoggle"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/tgbtNothing"
+            android:layout_width="235dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/nothingtoggle"
+            android:text="ToggleButton"
+            android:textOff=""
+            android:textOn="" />
+
+        <ToggleButton
+            android:id="@+id/tgbtWalk"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:background="@drawable/walktoggle"
+            android:textOff=""
+            android:textOn="" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btSearchTrip"
+        style="?android:textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"
+        android:layout_weight="8"
+        android:background="#80FFFFFF"
+        android:text="@string/wordSearchTrip"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+</LinearLayout>

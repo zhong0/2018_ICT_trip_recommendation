@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundhis"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:fontFamily="@font/rock_salt"
+        android:gravity="center"
+        android:text="Time to Trip"
+        android:textAlignment="center"
+        android:textColor="#dfd3c3"
+        android:textSize="40sp" />
+</LinearLayout>

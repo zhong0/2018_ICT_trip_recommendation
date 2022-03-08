@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">說走就走</string>
+    <string name="AccountMenu">我的帳戶</string>
+    <string name="HistoryMenu">歷史紀錄</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="loginEn">Login</string>
+    <string name="wordAcc">帳號</string>
+    <string name="wordPass">密碼</string>
+    <string name="hintAcc">輸入帳號</string>
+    <string name="hintPass">輸入密碼</string>
+    <string name="wordLogin">登入</string>
+    <string name="wordReg">註冊</string>
+
+    <string name="setAcc">請輸入4-8位數字或字母</string>
+    <string name="wordPasswordAgain">請再次輸入密碼</string>
+    <string name="registerEn">Register</string>
+    <string name="forgetQWord">請輸入防忘密碼問題</string>
+    <string name="hintPassword">輸入4-11位數字或字母</string>
+    <string name="hintForgetQ">輸入1-8個字(ex:喜歡的地方)</string>
+    <string name="forgetAWord">請輸入答案</string>
+    <string name="regWarning">**請填妥帳號與性別，註冊後不得更改**</string>
+    <string name="hintForgetA">輸入1-8個字</string>
+    <string name="wordGender">性別</string>
+    <string name="wordAge">年齡</string>
+    <string name="wordCarrier">職業</string>
+    <string name="wordheckAcc">驗證</string>
+
+    <string name="wordForget">忘記密碼</string>
+    <string name="wordMyAcc">My Info.</string>
+    <string name="wordLogout">登出</string>
+    <string name="wordModify">修改資料</string>
+
+    <string name="wordRechoose">重選旅程</string>
+
+    <string name="wordStart">開始旅程</string>
+    <string name="line">____</string>
+
+    <string name="wordModification">Modify</string>
+    <string name="wordSave">儲存</string>
+
+    <string name="wordExhibiInfo">展覽資訊</string>
+
+    <string name="wordRating">評分</string>
+    <string name="wordMode">請選擇旅程模式</string>
+
+    <string name="wordSearchTrip">搜索旅程</string>
+    <string name="wordChooseTrip">選擇旅程</string>
+
+    <string name="api_key">AIzaSyBhVP55VAE4XhJf9lxQnI1aOIUC4e9QdZQ</string>
+
+    <string name="worddiscountMenu">優惠券</string>
+    <string name="specialMenu">期間限定</string>
+    <string name="specialActMenu">優惠活動</string>
+    <string name="leafbottle">葉子撲滿</string>
+    <string name="feedback">感想</string>
+
+    <string name="qrcode">請將相機對焦至 QR code上</string>
+</resources>
