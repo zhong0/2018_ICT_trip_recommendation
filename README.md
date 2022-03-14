@@ -1,6 +1,8 @@
 # 雙北即時旅遊App─說走就走
 
 Demo Video: https://youtu.be/2IwYbiNdoI8
+* 2018大專校院資訊應用服務創新競賽入圍：資訊應用組、AWS雲端科技趨勢應用組
+* 2018全國雲端APP行動創意應用競賽第二名
 
 專案內容
 ----
@@ -21,15 +23,13 @@ Demo Video: https://youtu.be/2IwYbiNdoI8
   >本專案於Android Studio開發使用者介面，以XML繪製Layout，Java編寫介面操作，包含CardView、Recyclerview、Barcode Scanner等，並嵌入Google Map Api增加導航功能。此外，在傳遞資料的部分，使用Volley Library傳接資料，利用Gson於Java語言中接收來自php的Json格式的資料。
 
 
-
-
 環境建置
 ----
 * ### Database
   >登入AWS educate選擇EC2類型，並設定對外連接的port，使用金鑰登入，在虛擬機上下載xampp，並啟用Apache與MySQL功能，即可對外連接。在虛擬機上開啟localhost(127.0.0.1)進入phpMyAdmin，將本專案sql檔import即可開始操作資料庫。
 
 * ### php
-  >將php的所有檔案放置EC2虛擬機上的xampp/htdoc/底下。
+  >將php的所有檔案放置EC2虛擬機上的xampp/htdoc/路徑底下。
 
 * ### Android Studio
   >依照官方說明下載Android Studio，直接從Android Studio開啟本專案，若電腦尚未下載Java需依照環境提示安裝，並同步Gradle，完成專案設定。目前本專案之雲端伺服器IP已關閉，因此在傳接資料的網址，需更換成各自的伺服器IP。本專案設定設定gradle(Module:app)，minSdkVersion為23、targetSdkVersion為27。<br>
