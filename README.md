@@ -33,7 +33,7 @@ Demo Video: https://youtu.be/2IwYbiNdoI8
   >將php的所有檔案放置EC2虛擬機上的xampp/htdoc/路徑底下，將檔案內資料庫使用者名稱與密碼改為各自設定名稱。
 
 * ### Android Studio
-  >依照官方說明下載Android Studio，從Android Studio開啟本專案檔案，若電腦尚未下載Java需依照環境提示安裝，並同步Gradle，完成專案設定。目前本專案之雲端伺服器IP已關閉，因此，在傳接資料的網址，需更換成各自的伺服器IP。本專案設定設定gradle(Module:app)，minSdkVersion為23、targetSdkVersion為27。<br>
+  >依照官方說明下載Android Studio，從Android Studio開啟本專案檔案，若電腦尚未下載Java需依照環境提示安裝，並同步Gradle，完成專案設定。目前本專案之雲端伺服器IP已關閉，因此，在傳接資料的網址，需更換成各自的伺服器IP。本專案設定gradle(Module:app)，minSdkVersion為23、targetSdkVersion為27。<br>
   
   >注意：本專案只提供學術需求，若需要完整介面檔案，請傳送email至109753106@g.nccu.edu.tw，經評估後，將給予下載權限。
 
