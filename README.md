@@ -7,20 +7,21 @@ Demo Video: https://youtu.be/2IwYbiNdoI8
 專案內容
 ----
 * ### 即時旅程推薦<br>
-
+  >本系統提供短時程於雙北市內空閒之輕旅行推薦。其依照不同個人屬性，例如性別、年齡層、職業、旅伴關係、活動性質等，推薦不同行程，推薦分數計算包含個人使用習慣、同屬性大眾分數計算，為避免推薦一塵不變，納入隨機成分於推薦列表內，其皆會參考目前時間推薦數小時至一天內的行程。
 
 * ### 商業模式<br>
+  >為增加黏著性及拓展商家客群，本系統利用掃QRcode的方式集點，並可兌換商城內各店家之優惠卷，此外，推薦列表內之部分隨機內容也會依照合作金額不同有所高低。然而，越多使用者使用本平台時，進而能提供各商家客群數據，協助商家了解自我定位及研討各自經營模式。更多詳細相關內容可參考document內文件。
 
 技術說明
 ----
 * ### 資料庫 <br>
-  >使用Amazon EC2虛擬機，於其內安裝xampp套件，搭配其中的Apache Server作為本專案之雲端伺服器。初始資料庫數據則利用Google表單搜集，進而以Maria DB架構使用SQL語言建置資料庫，且利用phpMyAdmin網頁介面管理資料庫。
+  >使用Amazon EC2虛擬機，於其內安裝xampp套件，搭配其中的Apache Server作為本專案之雲端伺服器。初始資料庫數據則利用Google表單搜集，以關聯式資料庫設計整體架構，進而以Maria DB架構使用SQL語言建置資料庫，且利用phpMyAdmin網頁介面管理資料庫。
 
 * ### 資料傳接 <br>
   >本專案以php作為各功能傳接資料的橋樑，在php檔案內連至資料庫，並在其中編寫SQL指令，且以POST接收從Android端傳送的資料，進而做到查詢、更新、刪除等資料庫相關操作。相關操作達成後，若要回傳至使用者端，會將資料包裝成Json格式，以echo回傳至Android端。
 
 * ### 使用者介面 <br>
-  >本專案於Android Studio開發使用者介面，以XML繪製Layout，Java編寫介面操作，包含CardView、Recyclerview、Barcode Scanner等，並嵌入Google Map Api增加導航功能。此外，在傳遞資料的部分，使用Volley Library傳接資料，利用Gson於Java語言中接收來自php的Json格式的資料。
+  >本專案於Android Studio開發使用者介面，以XML繪製Layout，Java編寫介面操作，包含CardView、Recyclerview、Barcode Scanner等，並嵌入Google Map API加入導航功能。此外，在傳遞資料的部分，使用Volley Library傳接資料，利用Gson於Java語言中接收來自php的Json格式的資料。
 
 
 環境建置
