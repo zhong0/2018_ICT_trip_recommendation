@@ -43,10 +43,9 @@ Demo Video: https://youtu.be/2IwYbiNdoI8
 補充說明
 ----
 * ### backstage
-  >backstage資料夾為提供各商家數據後台，內有一張jpg照片為後台設計首頁。
+  >backstage資料夾為提供各商家數據後台，內有一張jpeg檔案為後台設計首頁截圖。
 
 * ### document
-----
   >document資料夾含有2018大專校院資訊應用服務創新競賽初賽文件、複賽海報及簡報，想知道更詳細內容可查看資料夾文件或是點選上述demo影片連結。
 
 
