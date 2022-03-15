@@ -30,7 +30,7 @@ Demo Video: https://youtu.be/2IwYbiNdoI8
 環境建置
 ----
 * ### Database
-  >登入AWS educate選擇EC2類型，我們使用windows作業系統的環境，並設定對外連接的port，再使用金鑰登入。在虛擬機上下載xampp，設定使用者名稱與密碼，並啟用Apache與MySQL功能，即可對外連接。在虛擬機上開啟localhost(127.0.0.1)進入phpMyAdmin，將本專案sql檔import即可開始操作資料庫。
+  >登入AWS educate選擇EC2類型，本專案選用windows作業系統的環境，並設定對外連接的port，再使用金鑰登入。在虛擬機上下載xampp，設定使用者名稱與密碼，並啟用Apache與MySQL功能，即可對外連接。在虛擬機上開啟localhost(127.0.0.1)進入phpMyAdmin，將本專案sql檔import即可開始操作資料庫。
 
 * ### php
   >xampp套件中已包含php環境，將php與backstage之所有檔案放置EC2虛擬機上的xampp/htdoc/路徑底下，檔案內資料庫使用者名稱與密碼需改為各自設定名稱。
