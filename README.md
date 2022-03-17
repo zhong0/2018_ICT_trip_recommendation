@@ -8,7 +8,7 @@ Chinese introduction video: https://youtu.be/2IwYbiNdoI8
 ----
 * ### 即時旅程推薦<br>
   >本系統提供短時程於雙北市內空閒之輕旅行推薦。其依照不同個人屬性，例如性別、年齡層、職業、旅伴關係、活動性質等，推薦不同行程，推薦分數計算包含個人使用習慣、同屬性大眾分數計算，為避免推薦一塵不變，納入隨機成分於推薦列表內，其皆會參考目前時間推薦數小時至一天內的行程。
-  >Our system provides instant short-time trip recommendation in Taipei and New Taipei City. According to different personal attributes, such as gender, ages, occupation, relationship and favoritve types of activities to suggest the journey. The recommendation score calculation contains the preferences of personal and the same kind of people with user. To avoid to suggest repeated activities, it cotains some random content in the recommendation list. Overall, all the recommended journey would cost within several hours to less a day from current time.
+  >Our system provides instant short-time trip recommendation in Taipei and New Taipei City. According to different personal attributes, such as gender, ages, occupation, relationship and favoritve types of activities, to suggest the journey. The recommendation score calculation contains the preferences of personal and the same kind of people with user. To avoid to suggest repeated activities, it cotains some random content in the recommendation list. Overall, all the recommended journey would cost within several hours to less a day from current time.
 
 * ### 商業模式<br>
   >為增加黏著性及拓展商家客群，本系統利用掃QRcode的方式集點，並可兌換商城內各店家之優惠卷，此外，推薦列表內之部分隨機內容也會依照合作金額不同有所高低。然而，越多使用者使用本平台時，進而能提供各商家客群數據，協助商家了解自我定位及研討各自經營模式。
@@ -18,15 +18,19 @@ Chinese introduction video: https://youtu.be/2IwYbiNdoI8
 ----
 * ### 資料庫 <br>
   >使用Amazon EC2虛擬機，於其內安裝xampp套件，搭配其中的Apache Server作為本專案之雲端伺服器。初始資料庫數據則利用Google表單搜集，以關聯式資料庫設計整體架構，進而以Maria DB架構使用SQL語言建置資料庫，且利用phpMyAdmin網頁介面管理資料庫。
+  >Our cloud server is Aamazon EC2 virtual machine, which was set up the xampp and used its Apache Server. We collect the initial statistice via Google Forms. Based on relational database concepts, we use SQL with Maria DB framwork to build our database, and manage it with phpMyAdmin.
 
 * ### 資料傳接 <br>
   >本專案以php作為各功能傳接資料的橋樑，在php檔案內連至資料庫，並在其中編寫SQL指令，且以POST接收從Android端傳送的資料，進而做到查詢、更新、刪除等資料庫相關操作。相關操作達成後，若要回傳至使用者端，會將資料包裝成Json格式，以echo回傳至Android端。
+  >Php files connect all data of each function between user side and database. In php codes, there's a connection to our database and SQL commands. We used POST method to recieve the data from Android side to operate our database, such as query, update, delete and son on. If it's need to return the value to user, the data will return with Json format vie echo command.
 
 * ### 商家後台建置 <br>
   >為提供商家客群數據，本專案以html、css設計後台介面，以php傳接資料，其html程式碼寫入於後台相關之php檔案內。
+  >To provide the cutomer statistics to the stores, we develop the backstage with html, css. Also, it passes the data via php, and the html code is contain in php files.
 
 * ### 使用者介面 <br>
   >本專案於Android Studio開發使用者介面，以XML繪製Layout，Java編寫介面操作，包含CardView、Recyclerview、Barcode Scanner等，並嵌入Google Map API加入導航功能。此外，在傳遞資料的部分，使用Volley Library傳接資料，利用Gson於Java語言中接收來自php的Json格式的資料。
+  >The user interface was developed with Android Studio. The Layout was generated with XML, and the interface operation was coded with Java. The techniques includes CardView, RecyclerView, Barcode Scanner, etc. Besides, we embedded Google Map API to achieve navigation function. Moreover, we used Volley Library to pass the data and Gson Library help Java to depack the Json format data from php files.
 
 
 環境建置
