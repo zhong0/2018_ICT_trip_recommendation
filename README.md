@@ -8,7 +8,7 @@ Chinese introduction video: https://youtu.be/2IwYbiNdoI8
 ----
 * ### 即時旅程推薦<br>
   >本系統提供短時程於雙北市內空閒之輕旅行推薦。其依照不同個人屬性，例如性別、年齡層、職業、旅伴關係、活動性質等，推薦不同行程，推薦分數計算包含個人使用習慣、同屬性大眾分數計算，為避免推薦一塵不變，納入隨機成分於推薦列表內，其皆會參考目前時間推薦數小時至一天內的行程。
-  >Our system provides instant short-time trip recommendation in Taipei and New Taipei City. According to different personal attributes, such as gender, ages, occupation, relationship and favoritve types of activities, to suggest the journey. The recommendation score calculation contains the preferences of personal and the same kind of people with user. To avoid to suggest repeated activities, it cotains some random content in the recommendation list. Overall, all the recommended journey would cost within several hours to less a day from current time.
+  >Our system provides instant short-time trip recommendation in Taipei and New Taipei City. According to different personal attributes, such as gender, ages, occupation, relationship and favoritve types of activities, to suggest the journey. The recommendation score calculation contains the preferences of person and the same kind of people with user. To avoid to suggest repeated activities, it cotains some random content in the recommendation list. Overall, all the recommended journey would cost within several hours to less a day from current time.
 
 * ### 商業模式<br>
   >為增加黏著性及拓展商家客群，本系統利用掃QRcode的方式集點，並可兌換商城內各店家之優惠卷，此外，推薦列表內之部分隨機內容也會依照合作金額不同有所高低。然而，越多使用者使用本平台時，進而能提供各商家客群數據，協助商家了解自我定位及研討各自經營模式。
