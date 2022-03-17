@@ -1,57 +1,51 @@
-# 雙北即時旅遊App─說走就走
+# Taipei Instant Trip Recommendation - Hit the Road
 
 Chinese introduction video: https://youtu.be/2IwYbiNdoI8
 * International ICT Innovative Services Awards 2018(IP Group, AWS Group)- Nominated
-* National Cloud APP Action Creative Application Competition 2018 - Second place
+* National Cloud APP Mobile Creative Application Competition 2018 - Second place
 
-專案內容
+Introduction
 ----
-* ### 即時旅程推薦<br>
-  >本系統提供短時程於雙北市內空閒之輕旅行推薦。其依照不同個人屬性，例如性別、年齡層、職業、旅伴關係、活動性質等，推薦不同行程，推薦分數計算包含個人使用習慣、同屬性大眾分數計算，為避免推薦一塵不變，納入隨機成分於推薦列表內，其皆會參考目前時間推薦數小時至一天內的行程。
+* ### Instant Trip Recommendation<br>
   >Our system provides instant short-time trip recommendation in Taipei and New Taipei City. According to different personal attributes, such as gender, ages, occupation, relationship and favoritve types of activities, to suggest the journey. The recommendation score calculation contains the preferences of person and the same kind of people with user. To avoid to suggest repeated activities, it cotains some random content in the recommendation list. Overall, all the recommended journey would cost within several hours to less a day from current time.
 
-* ### 商業模式<br>
-  >為增加黏著性及拓展商家客群，本系統利用掃QRcode的方式集點，並可兌換商城內各店家之優惠卷，此外，推薦列表內之部分隨機內容也會依照合作金額不同有所高低。然而，越多使用者使用本平台時，進而能提供各商家客群數據，協助商家了解自我定位及研討各自經營模式。
+* ### Business Strategy<br>
   >To enhace the attractiveness and broaden the customers, user collect the points via scan the QR code during the trip, and exchange the coupons of several stores in our shopping center. In addition, different advertisement fee would influence the part of random recommendation list. However, the more user use our system, the more specific analysis of customer statistic obtains, which assists the store to understand their marketing position and strategy.  
 
-技術說明
+Techniques
 ----
-* ### 資料庫 <br>
-  >使用Amazon EC2虛擬機，於其內安裝xampp套件，搭配其中的Apache Server作為本專案之雲端伺服器。初始資料庫數據則利用Google表單搜集，以關聯式資料庫設計整體架構，進而以Maria DB架構使用SQL語言建置資料庫，且利用phpMyAdmin網頁介面管理資料庫。
+* ### Database <br>
   >Our cloud server is Aamazon EC2 virtual machine, which was set up the xampp and used its Apache Server. We collect the initial statistice via Google Forms. Based on relational database concepts, we use SQL with Maria DB framwork to build our database, and manage it with phpMyAdmin.
 
-* ### 資料傳接 <br>
-  >本專案以php作為各功能傳接資料的橋樑，在php檔案內連至資料庫，並在其中編寫SQL指令，且以POST接收從Android端傳送的資料，進而做到查詢、更新、刪除等資料庫相關操作。相關操作達成後，若要回傳至使用者端，會將資料包裝成Json格式，以echo回傳至Android端。
+* ### Data Passing <br>
   >Php files connect all data of each function between user side and database. In php codes, there's a connection to our database and SQL commands. We used POST method to recieve the data from Android side to operate our database, such as query, update, delete and son on. If it's need to return the value to user, the data will return with Json format vie echo command.
 
-* ### 商家後台建置 <br>
-  >為提供商家客群數據，本專案以html、css設計後台介面，以php傳接資料，其html程式碼寫入於後台相關之php檔案內。
-  >To provide the cutomer statistics to the stores, we develop the backstage with html, css. Also, it passes the data via php, and the html code is contain in php files.
+* ### Backstage for stores <br>
+  >To provide the cutomer statistics to the cooperating stores, we develop the backstage with html, css and php. Also, it passes the data via php files, and the html code is combined to the php files.
 
-* ### 使用者介面 <br>
-  >本專案於Android Studio開發使用者介面，以XML繪製Layout，Java編寫介面操作，包含CardView、Recyclerview、Barcode Scanner等，並嵌入Google Map API加入導航功能。此外，在傳遞資料的部分，使用Volley Library傳接資料，利用Gson於Java語言中接收來自php的Json格式的資料。
+* ### User Interface <br>
   >The user interface was developed with Android Studio. The Layout was generated with XML, and the interface operation was coded with Java. The techniques includes CardView, RecyclerView, Barcode Scanner, etc. Besides, we embedded Google Map API to achieve navigation function. Moreover, we used Volley Library to pass the data and Gson Library help Java to depack the Json format data from php files.
 
 
-環境建置
+Environment
 ----
 * ### Database
-  >登入AWS educate選擇EC2類型，本專案選用windows作業系統的環境，並設定對外連接的port，再使用金鑰登入。在虛擬機上下載xampp，設定使用者名稱與密碼，並啟用Apache與MySQL功能，即可對外連接。在虛擬機上開啟localhost(127.0.0.1)進入phpMyAdmin，將本專案sql檔import即可開始操作資料庫。
+  >Firstly, we used Windows os environment on AWS EC2, and set the port to make external network available to connect it. To enter the virtual machine, you need to download the authorized certificate and type the password to login. In the machine, you will download Xampp and set the username and the password. It's necessary to start the functions of Apache and MySQL. Then, you could open the localhost(127.0.0.1) to get access to phpMyAdmin. You can operate the database finally after importing our sql file.
 
 * ### php
-  >xampp套件中已包含php環境，將php與backstage之所有檔案放置EC2虛擬機上的xampp/htdoc/路徑底下，檔案內資料庫使用者名稱與密碼需改為各自設定名稱。
+  >Xampp contains the environment of php. Therefore, you just need to put all php files and backstage files to the path xampp/htdoc/ in the EC2 machine. It's notified that the username and password in those files need to be modified to your own settings.
 
 * ### Android Studio
-  >依照官方說明下載Android Studio，從Android Studio開啟本專案檔案，若電腦尚未下載Java需依照環境提示安裝，並同步Gradle，完成專案設定。目前本專案之雲端伺服器IP已關閉，因此，在傳接資料的網址，需更換成各自的伺服器IP。本專案設定gradle(Module:app)，minSdkVersion為23、targetSdkVersion為27。<br>
+  >According to official documnet, you should download Android Studio first, and then open our project files from Android Studio. If your pc doesn't contain Java environment, you need to follow the hint to download it. Moreover, you should synchronous the gradle file with our project. Our server is closed. Therefore, you should modified all the IP links in the projects. The setting of minSdkVersion is 23 and targetSdkVersion is 27 in our project. <br>
   
-  >注意：本專案只提供學術需求，若需要完整介面檔案，請傳送email至109753106@g.nccu.edu.tw，經評估後，將給予下載權限。
+  >Notification: Our project is only provide to acadamic needs. If you need to download the user interface file, please feel free to send the e-mail to 109753106@g.nccu.edu.tw. We would authorize the access after estimating.
 
-補充說明
+Supplement
 ----
 * ### backstage
-  >backstage資料夾為提供各商家數據後台程式檔案，內有一張jpeg檔案為後台設計首頁截圖。
+* The backstage file contains the code which provide customers statistices of the cooperating stores. There's a jpeg file which is the screenshot of the homepage looks.
 
 * ### document
-  >document資料夾含有2018大專校院資訊應用服務創新競賽初賽文件、複賽海報及簡報，想知道更詳細內容可查看資料夾文件或是點選上述demo影片連結。
+  >The document files contains the document in the preliminary contest of International ICT Innovative Services Awards 2018. Also, the poster and presentation ppt in finals are attached. All the documents are written in Chinese. If you want to understand the details of our system work, you can click the demo video link.
 
 
