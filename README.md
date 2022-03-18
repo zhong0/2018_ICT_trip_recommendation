@@ -42,11 +42,11 @@ Environment
 
 Supplement
 ----
-* ### backstage
-  >The backstage file contains the code which is the user interface of backstage for cooperative stores. The picture in the file is the screenshot of the homepage looks.
-
 * ### Business Strategy
   >The business strategy is only a concept. There’s no real cooperative stores in our project. The function we developed is a simulation to the expected situation.
+
+* ### backstage
+  >The backstage file contains the code which is the user interface of backstage for cooperative stores. The picture in the file is the screenshot of the homepage looks.
 
 * ### document
   >The document file contains the introduction document for the preliminary contest of International ICT Innovative Services Awards 2018. Also, the poster and presentation ppt for finals are attached. All the documents are written in Chinese. If you want to understand our systems work in details, you can watch the introduction video via above link.
