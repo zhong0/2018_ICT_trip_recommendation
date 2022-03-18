@@ -15,7 +15,7 @@ Introduction
 Techniques
 ----
 * ### Database
-  > We applied Amazon EC2 virtual machine, which was installed the Xampp and used its Apache server, as our cloud server. The initial statistics was collected via Google Forms. Based on relational database concepts, we used SQL with Maria DB framework to build our database, and managed it with phpMyAdmin.
+  > We applied Amazon EC2 virtual machine, which was installed the Xampp and used its Apache server, as our cloud server. The initial statistics was collected via Google Forms. Based on the relational database concepts, we used SQL with Maria DB framework to build our database, and managed it with phpMyAdmin.
 
 * ### Data Transmission
   >Php files connected the data to each function between user side and database. The connection to the database and SQL commands were written in php files. We used POST method to receive the data from Android side to manipulate our database, such as querying, updating, deleting and so on. If it was need to send the value to Android side, we formed the data to Json format and returned it with echo commands.
