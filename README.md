@@ -32,7 +32,7 @@ Environment
 * ### Database
   >We used Windows os environment on AWS EC2, and set the port to make external network available to connect it. To enter the virtual machine, you need to download the authorized certificate and type the password to login. In the machine, you need to download Xampp and set the username and the password. It's necessary to start the functions of Apache and MySQL. Then, you can be access to phpMyAdmin after linking to the localhost(127.0.0.1), and import our sql file to implement the database.
 
-* ### php
+* ### PHP
   >Xampp contains the php environment. Therefore, you just need to move all php files and backstage files to the path /xampp/htdoc/ in the EC2 machine. It's noticed that the username and password in those files should be modified to your own settings.
 
 * ### Android Studio
@@ -45,8 +45,8 @@ Supplement
 * ### Business Strategy
   >The business strategy is only a concept. There’s no real cooperative store in our project. The function we developed is a simulation to the expected situation.
 
-* ### backstage
+* ### Backstage
   >The backstage file contains the code which is the user interface of backstage for cooperative stores. The picture in the file is the screenshot of the homepage looks.
 
-* ### document
+* ### Document
   >The document file contains the introduction document for the preliminary contest of International ICT Innovative Services Awards 2018. Also, the poster and presentation ppt for finals are attached. All the documents are written in Chinese. If you want to understand our systems work in details, you can watch the introduction video via above link.
