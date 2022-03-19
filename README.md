@@ -24,13 +24,13 @@ Techniques
   >To provide the customer statistics to the cooperative stores, we developed the backstage with html, css and php. Also, the data was transmitted via php files, and the html code was combined to the php files.
 
 * ### User Interface
-  >The user interface was developed with Android Studio. The Layout was generated with XML, and the interface operation was coded with Java. The techniques included CardView, RecyclerView, Barcode Scanner, etc. Besides, we embedded Google Map API to achieve navigation function. Volley library was applied to pass the data. Gson library helped Java to depack the Json format data from php files.
+  >The user interface was developed with Android Studio. The Layout was generated with XML, and the interface operation was coded with Java. The techniques included CardView, RecyclerView, Barcode Scanner, etc. Besides, we embedded Google Map API to achieve navigation function. Volley library was applied to pass the data. Gson library helped in Java to parse the Json format data from php files.
 
 
 Environment
 ----
 * ### Database
-  >We used Windows os environment on AWS EC2, and set the port to make external network available to connect it. To enter the virtual machine, you need to download the authorized certificate and type the password to login. In the machine, you need to download Xampp and set the username and the password. It's necessary to start the functions of Apache and MySQL. Then, you can be access to phpMyAdmin after linking to the localhost(127.0.0.1), and import our sql file to  implement the database.
+  >We used Windows os environment on AWS EC2, and set the port to make external network available to connect it. To enter the virtual machine, you need to download the authorized certificate and type the password to login. In the machine, you need to download Xampp and set the username and the password. It's necessary to start the functions of Apache and MySQL. Then, you can be access to phpMyAdmin after linking to the localhost(127.0.0.1), and import our sql file to implement the database.
 
 * ### php
   >Xampp contains the php environment. Therefore, you just need to move all php files and backstage files to the path /xampp/htdoc/ in the EC2 machine. It's noticed that the username and password in those files should be modified to your own settings.
