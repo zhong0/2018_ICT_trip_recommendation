@@ -1,7 +1,7 @@
 
 # 雙北即時旅遊App─說走就走
 
-introduction video: https://youtu.be/2IwYbiNdoI8
+介紹影片: https://youtu.be/2IwYbiNdoI8
 * 2018大專校院資訊應用服務創新競賽資訊應用組、AWS雲端科技趨勢應用組-入圍
 * 2018全國雲端APP行動創意應用競賽-第二名
 
