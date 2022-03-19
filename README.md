@@ -43,7 +43,7 @@ Environment
 Supplement
 ----
 * ### Business Strategy
-  >The business strategy is only a concept. There’s no real cooperative stores in our project. The function we developed is a simulation to the expected situation.
+  >The business strategy is only a concept. There’s no real cooperative store in our project. The function we developed is a simulation to the expected situation.
 
 * ### backstage
   >The backstage file contains the code which is the user interface of backstage for cooperative stores. The picture in the file is the screenshot of the homepage looks.
