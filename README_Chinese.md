@@ -42,6 +42,9 @@ introduction video: https://youtu.be/2IwYbiNdoI8
 
 補充說明
 ----
+* ### 商業模式
+  >本專案之商業模式只為構想，本專案未與任何商家合作並進行商業合作，其功能開發皆為模擬實際狀況。
+
 * ### backstage
   >backstage資料夾為提供各商家數據後台程式檔案，內有一張jpeg檔案為後台設計首頁截圖。
 
