@@ -1,4 +1,4 @@
-# Taipei Instant Trip Recommendation - Hit the Road
+# Taipei Instant Trip Recommendation
 
 Chinese introduction video: https://youtu.be/2IwYbiNdoI8
 * International ICT Innovative Services Awards 2018(IP Group, AWS Group)- Nominated
