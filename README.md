@@ -2,7 +2,7 @@
 
 Chinese introduction video: https://youtu.be/2IwYbiNdoI8
 * International ICT Innovative Services Awards 2018(IP Group, AWS Group)- Nominated
-* National Cloud APP Mobile Creative Application Competition 2018 - Second place
+* National Cloud APP Mobile Creative Application Competition 2018(Mobile Commerce Group) - Second place
 
 Introduction
 ----
